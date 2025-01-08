@@ -1,6 +1,36 @@
 import streamlit as st
 import random
 st.title("나의 첫번째 앱")
+# 사용자 정의 CSS 스타일 적용
+st.markdown("""
+<style>
+    .main {
+        background-color: #f0f2f6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .quote-text {
+        font-size: 24px;
+        font-style: italic;
+        color: #333;
+        margin: 20px 0;
+    }
+    .author {
+        font-size: 18px;
+        color: #666;
+        text-align: right;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.title("랜덤 명언 생성기")
 
 # 명언 리스트
